@@ -646,24 +646,15 @@ require('lazy').setup({
     build = ':TSUpdate',
     opts = {
       ensure_installed = {
-        'bash',
-        'c',
-        'diff',
         'html',
         'lua',
         'luadoc',
         'markdown',
-        'vim',
-        'vimdoc',
         'javascript',
         'typescript',
         'rust',
         'css',
-        'csv',
-        'jsdoc',
-        'sql',
         'tsx',
-        'yaml',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
@@ -705,7 +696,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
-  -- require 'kickstart.plugins.autopairs',
+  require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.neo-tree',
   require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
   require 'kickstart.plugins.todo-comments',
@@ -715,7 +706,7 @@ require('lazy').setup({
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
-  -- { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
