@@ -1,6 +1,9 @@
 return {
   'nvimtools/none-ls.nvim',
   -- TODO: I didn't like this plugin need to test the default instalation, often times eslint_d fail to load
+  dependencies = {
+    'nvimtools/none-ls-extras.nvim',
+  },
   config = function()
     local null_ls = require 'null-ls'
 
