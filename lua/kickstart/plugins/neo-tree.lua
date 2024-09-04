@@ -15,6 +15,17 @@ return {
   },
   opts = {
     filesystem = {
+      filtered_items = {
+        hide_dotfiles = false,
+        hide_by_name = {
+          '.git',
+          '.vscode',
+          'node_modules',
+        },
+        always_show = {
+          'target',
+        },
+      },
       window = {
         mappings = {
           ['\\'] = 'close_window',
