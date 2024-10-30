@@ -436,6 +436,8 @@ require('lazy').setup({
         'stylua', -- Used to format Lua code
         'eslint_d', -- Used to debug Typescript or Javascript code
         'prettier', -- Used to format Typescript or Javascript code
+        'svelte',
+        'tailwindcss',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
